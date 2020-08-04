@@ -96,7 +96,7 @@ change take effect.
 
 In an ssh terminal connection to rhino, enter the following:
 
-    git clone 'https://github.com/pennmem/CMLWorkshop'
+    git clone 'https://github.com/pennmem/CMLWorkshop.git'
 
 ### Setting up the CMLExamples files
 
