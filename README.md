@@ -76,6 +76,10 @@ former lab members:
 
     conda install -c pennmem ptsa
 
+Install a few extra packages in use for these notes:
+
+    conda install sklearn statsmodels seaborn
+
 Finally, you'll need to link JupyterLab with your specific Python
 installation.  While still logged in and in your Anaconda "environment",
 type:
