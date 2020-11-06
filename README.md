@@ -186,12 +186,12 @@ that maintains python
 
 The Scipy lectures are a comprehensive book covering a huge range of topics.
 For an introduction to python, we recommend sections:
-*1.1--1.3
+* 1.1--1.3
 [Scipy Lectures](https://scipy-lectures.org/)
 
 ### Advanced topics
-[PyCon 2015 talk on names and values](https://www.youtube.com/watch?v=_AEJHKGk9ns)
-[Print version of talk](https://nedbatchelder.com/text/names.html)
+* [PyCon 2015 talk on names and values](https://www.youtube.com/watch?v=_AEJHKGk9ns)
+* [Print version of talk](https://nedbatchelder.com/text/names.html)
 
 ## Introduction to Data Analysis Tools
 There is a standard set of data analysis tools for python data science. The
@@ -225,10 +225,10 @@ questions as they come up. Aside from python, these all point to the latest
 version. If something seems wrong, check that the version of your package
 matches the version of the documentation you're looking at!
 
-[Python 3.7](https://docs.python.org/3.7/)
-[Numpy 1.19](https://numpy.org/doc/1.19/contents.html#numpy-docs-mainpage)
-[Scipy (latest)](https://docs.scipy.org/doc/scipy/reference/)
-[Pandas(latest)](https://pandas.pydata.org/docs/)
+* [Python 3.7](https://docs.python.org/3.7/)
+* [Numpy 1.19](https://numpy.org/doc/1.19/contents.html#numpy-docs-mainpage)
+* [Scipy (latest)](https://docs.scipy.org/doc/scipy/reference/)
+* [Pandas(latest)](https://pandas.pydata.org/docs/)
 
 # The workshop
 
