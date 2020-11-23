@@ -2,3 +2,6 @@
 ._*
 __pycache__
 
+# symlink present in instructions shouldn't be copied
+CMLExamples
+
