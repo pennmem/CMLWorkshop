@@ -27,7 +27,7 @@ the Computational Memory Lab and have access to Rhino, our computing cluster,
 you can skip down to the Getting started on Rhino section. Otherwise, you
 can follow the instructions below to set up python on your own computer.
 
-## Step 0
+## Command line access
 
 All subsequent stages of these instructions will assume familiarity with and access
 to a *NIX command line. If this is unfamiliar to you, please use the resources below
@@ -116,7 +116,9 @@ install MNE by typing the following (be sure you're in the Anaconda
 environmentname"). Note that this may take a while, because MNE has a
 lot of dependencies:
 
-    conda install -c conda-forge mne
+    conda install -c conda-forge "mne<0.19"
+    
+**Make sure you include the quotes!!**
 
 Next, install PTSA, which is a set of EEG tools developed by
 former lab members:
@@ -125,7 +127,7 @@ former lab members:
 
 Install a few extra packages in use for these notes:
 
-    conda install sklearn statsmodels seaborn
+    conda install scikit-learn statsmodels seaborn
 
 Finally, you'll need to link JupyterLab with your specific Python
 installation.  While still logged in and in your Anaconda "environment",
@@ -169,86 +171,7 @@ done by going into the CMLWorkshop directory and entering:
 
     ln -s /data/examples CMLExamples
 
-# Pre-launch resources
-
-Having now set up all of the tools needed to write and run Python code,
-as well as the additional packages needed for analysis, you're almost
-ready to launch into the analysis workshop. As mentioned before, the remainder
-of this workshop assumes a baseline familiarity with Python and some Python
-tools for data analysis.
-
-## Introduction to Python
-
-Collection of introductory resources curated by the organization
-that maintains python
-[Python Foundation resources for non-programmers](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)
-[Python Foundation resources for programmers](https://wiki.python.org/moin/BeginnersGuide/Programmers)
-
-The Scipy lectures are a comprehensive book covering a huge range of topics.
-For an introduction to python, we recommend sections:
-* 1.1--1.3
-[Scipy Lectures](https://scipy-lectures.org/)
-
-### Advanced topics
-* [PyCon 2015 talk on names and values](https://www.youtube.com/watch?v=_AEJHKGk9ns)
-* [Print version of talk](https://nedbatchelder.com/text/names.html)
-
-## Introduction to Data Analysis Tools
-There is a standard set of data analysis tools for python data science. The
-most prominent of these are numpy, scipy, and pandas. These are covered
-comprehensively in the Scipy Lectures. We recommend sections:
-
-* 1.4--1.4.3
-* 1.4.4.2
-* 1.5--1.6
-* 2.1.1.1--2.1.1.3
-* 2.1.2--2. 1.2.2
-* 2.1.2.5
-* 2.1.3--2.1.3.1
-* 2.2.1--2.2.1.3
-* 2.3.1.1
-* 2.4--2.4.2.2
-* 2.4.3--2.4.4
-* 3.1
-
-[Scipy Lectures](https://scipy-lectures.org/)
-
-### Advanced topics
-[Numpy broadcasting](http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc)
-
-## Official Documentation
-
-For Python and all of the packages referenced here, there are official
-descriptions of the functionality available written by the creators. A
-selection of these linked here and may serve invaluable in answering
-questions as they come up. Aside from python, these all point to the latest
-version. If something seems wrong, check that the version of your package
-matches the version of the documentation you're looking at!
-
-* [Python 3.7](https://docs.python.org/3.7/)
-* [Numpy 1.19](https://numpy.org/doc/1.19/contents.html#numpy-docs-mainpage)
-* [Scipy (latest)](https://docs.scipy.org/doc/scipy/reference/)
-* [Pandas(latest)](https://pandas.pydata.org/docs/)
-
-# The workshop
-
-In JupyterLab, navigate to the lecture notes you downloaded using
-the file browser section on the left, open the lecture notes, and
-proceed through them in order. If appropriate for your background and
-situation, jump ahead to the relevant sections to see syntax examples
-for common analyses and for using the common tools used by the
-Computational Memory Lab.
-
-Lectures covering the concepts underpinning the analyses covered in
-this workshop are available from the [Electrophysiology Workshop 2020](http://memory.psych.upenn.edu/Electrophysiology_Workshop_2020)
-page on the Computational Memory Lab wiki.
-
-## Rhino Specific Guide
-
-Rhino specific instructions for internal usage beyond the example data set,
-such as usage examples for CMLReader, are in the CMLReaders\_Usage.ipynb notebook.
-
-### Installing CMLReader
+## Installing CMLReaders (Rhino users only)
 
 In your ssh terminal to rhino, enter the following commands:
 
@@ -260,3 +183,47 @@ loading a large portion of data stored on Rhino. Any analyses using
 CMLLoad can bbe done nearly equivalently using CMLReaders, though CMLReaders
 has access to a much larger set of data on Rhino.
 
+# The workshop
+
+In JupyterLab, navigate to the lecture notes you downloaded using
+the file browser section on the left, open the lecture notes, and
+proceed through them in order. If appropriate for your background and
+situation, jump ahead to the relevant sections to see syntax examples
+for common analyses and for using the common tools used by the
+Computational Memory Lab.
+
+**Lectures covering the concepts underpinning the analyses covered in
+this workshop are available from the [Electrophysiology Workshop 2020](http://memory.psych.upenn.edu/Electrophysiology_Workshop_2020)
+page on the Computational Memory Lab wiki.**
+
+### Course Structure
+Our goal is to familiarize you with basic Python tools for data science and the libraries developed by our lab and others to facilitate EEG analyses. In order to understand the psychology / neuroscience at play in these analyses, you'll need to watch the associated lectures from the 2020 workshop. To that end, the course outline is as follows: 
+* Notebook 1 - **Intro to Python basics, Jupyter Notebooks, Numpy, and Pandas**
+* *Lecture 1*
+* *Lecture 2*
+* Notebook 2 - **Data loading, experimental events, PTSA, and MNE**
+* *Lecture 3*
+* Notebook 3 - **Working with EEG**
+* *Lecture 4*
+* Notebook 4 - **Signal processing and spectral analysis**
+* *Lecture 5*
+* Notebook 5 - **Machine Learning I, sklearn, regression/classification**
+* *Lecture 6*
+* Notebook 6 - **Machine Learning II, cross-validation, feature selection, other classifiers**
+
+By the end of this sequence, you should be able to carry out EEG/iEEG/ECoG analyses, like computing spectral power and phase, and compute statistics or apply machine learning models to those data.
+
+For **Rhino** users only:
+* Notebook 7 - **Parallel computing**
+* Notebook 8 - **Parallel computing**
+* Notebook 9 - **Biomarkers of Episodic Memory**
+
+These notebooks prepare you for doing in-depth multi-subject analyses with electrophysiological data. Anyone planning to work extensively with CML data should complete them. Notebook 9 is an advanced assignment that will take much longer than any of the others in this workshop - consider it a "final project" of sorts.
+
+Optional appendices:
+* *Lecture 8*
+* Notebook A1 - **Connectivity**
+* *Lecture 7*
+* Notebook A2 - **Single Unit Analysis, Spatial Memory**
+
+These notebooks cover advanced topics in computational neuroscience that go beyond the scope of what a beginner might need to know. If you are interested in these topics, or just want to gain some familiarity with them, we encourage you watch the associated lectures and go through the notebooks.
