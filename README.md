@@ -2,7 +2,45 @@
 
 These are notes for the Computational Memory Lab's Workshop on Cognitive Electrophysiology.  They are also a good introduction to performing EEG analyses, and you can use them as a resource for learning these tools and methods.
 
-# Making use of this tutorial
+**Lectures covering the concepts underpinning the analyses covered in
+this workshop are available from the [Electrophysiology Workshop 2020](http://memory.psych.upenn.edu/Electrophysiology_Workshop_2020)
+page on the Computational Memory Lab wiki.**
+
+# Course Structure
+Our goal is to familiarize you with basic Python tools for data science and the libraries developed by our lab and others to facilitate EEG analyses. In order to understand the psychology / neuroscience at play in these analyses, you'll need to watch the associated lectures from the 2020 workshop. To that end, the course outline is as follows: 
+
+* README - **This document, describing course structure and inital setup**
+* Notebook 1 - **Intro to Python basics, Jupyter Notebooks, Numpy, and Pandas**
+* *Lecture 1*
+* *Lecture 2*
+* Notebook 2 - **Data loading, experimental events, PTSA, and MNE**
+* *Lecture 3*
+* Notebook 3 - **Working with EEG**
+* *Lecture 4*
+* Notebook 4 - **Signal processing and spectral analysis**
+* *Lecture 5*
+* Notebook 5 - **Machine Learning I, sklearn, regression/classification**
+* *Lecture 6*
+* Notebook 6 - **Machine Learning II, cross-validation, feature selection, other classifiers**
+
+By the end of this sequence, you should be able to carry out EEG/iEEG/ECoG analyses, like computing spectral power and phase, and compute statistics or apply machine learning models to those data.
+
+For **Rhino** users only:
+* Notebook 7 - **Parallel computing**
+* Notebook 8 - **CMLReaders Usage**
+* Notebook 9 - **Biomarkers of Episodic Memory**
+
+These notebooks prepare you for doing in-depth multi-subject analyses with electrophysiological data. Anyone planning to work extensively with CML data should complete them. Notebook 9 is an advanced assignment that will take much longer than any of the others in this workshop - consider it a "final project" of sorts.
+
+Optional appendices:
+* *Lecture 7*
+* Notebook A1 - **Single Unit Analysis, Spatial Memory**
+* *Lecture 8*
+* Notebook A2 - **Connectivity**
+
+These notebooks cover advanced topics in computational neuroscience that go beyond the scope of what a beginner might need to know. If you are interested in these topics, or just want to gain some familiarity with them, we encourage you watch the associated lectures and go through the notebooks.
+
+## Making use of this tutorial
 
 This tutorial can be made use of on your own system after obtaining the
 CMLExamples data set (contact kahana-sysadmin@sas.upenn.edu to receive
@@ -12,12 +50,12 @@ your local machine or an environment on Rhino for affiliates of the
 Computational Memory Lab.
 
 Though this workshop assumes a basic knowledge of Python and command line
-tools, we have linked recommended resources in the Pre-launch section for getting started with
+tools, we have linked recommended resources in **Notebook 1** for getting started with
 python and common data analysis tools. Though this material isn't strictly
 part of the Workshop, we recommend reviewing it before proceeding to the
-materials included here unless you are confident in you experience with
+materials included here unless you are confident in your experience with
 numpy, pandas, scipy, and basic python syntax. If those words don't mean
-anything to you (or you want to brush up), please check out this section!
+anything to you (or you want to brush up), please read through these resources!
 
 # Initial Setup
 
@@ -183,47 +221,12 @@ loading a large portion of data stored on Rhino. Any analyses using
 CMLLoad can bbe done nearly equivalently using CMLReaders, though CMLReaders
 has access to a much larger set of data on Rhino.
 
-# The workshop
+# Launching The Workshop
 
-In JupyterLab, navigate to the lecture notes you downloaded using
+In JupyterLab (please see instructions above for how to set up and launch JupyterLab), navigate to the lecture notes you downloaded using
 the file browser section on the left, open the lecture notes, and
 proceed through them in order. If appropriate for your background and
 situation, jump ahead to the relevant sections to see syntax examples
 for common analyses and for using the common tools used by the
 Computational Memory Lab.
 
-**Lectures covering the concepts underpinning the analyses covered in
-this workshop are available from the [Electrophysiology Workshop 2020](http://memory.psych.upenn.edu/Electrophysiology_Workshop_2020)
-page on the Computational Memory Lab wiki.**
-
-### Course Structure
-Our goal is to familiarize you with basic Python tools for data science and the libraries developed by our lab and others to facilitate EEG analyses. In order to understand the psychology / neuroscience at play in these analyses, you'll need to watch the associated lectures from the 2020 workshop. To that end, the course outline is as follows: 
-* Notebook 1 - **Intro to Python basics, Jupyter Notebooks, Numpy, and Pandas**
-* *Lecture 1*
-* *Lecture 2*
-* Notebook 2 - **Data loading, experimental events, PTSA, and MNE**
-* *Lecture 3*
-* Notebook 3 - **Working with EEG**
-* *Lecture 4*
-* Notebook 4 - **Signal processing and spectral analysis**
-* *Lecture 5*
-* Notebook 5 - **Machine Learning I, sklearn, regression/classification**
-* *Lecture 6*
-* Notebook 6 - **Machine Learning II, cross-validation, feature selection, other classifiers**
-
-By the end of this sequence, you should be able to carry out EEG/iEEG/ECoG analyses, like computing spectral power and phase, and compute statistics or apply machine learning models to those data.
-
-For **Rhino** users only:
-* Notebook 7 - **Parallel computing**
-* Notebook 8 - **Parallel computing**
-* Notebook 9 - **Biomarkers of Episodic Memory**
-
-These notebooks prepare you for doing in-depth multi-subject analyses with electrophysiological data. Anyone planning to work extensively with CML data should complete them. Notebook 9 is an advanced assignment that will take much longer than any of the others in this workshop - consider it a "final project" of sorts.
-
-Optional appendices:
-* *Lecture 8*
-* Notebook A1 - **Connectivity**
-* *Lecture 7*
-* Notebook A2 - **Single Unit Analysis, Spatial Memory**
-
-These notebooks cover advanced topics in computational neuroscience that go beyond the scope of what a beginner might need to know. If you are interested in these topics, or just want to gain some familiarity with them, we encourage you watch the associated lectures and go through the notebooks.
