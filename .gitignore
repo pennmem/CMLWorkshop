@@ -1,6 +1,11 @@
 .*/
 ._*
 __pycache__
+.DSStore
+
+# travis is not being used for this project,
+# but is present in ptsa_plot submodule
+.travis*
 
 # symlink present in instructions shouldn't be copied
 CMLExamples
