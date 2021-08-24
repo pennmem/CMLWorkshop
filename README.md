@@ -137,14 +137,14 @@ and you should see the JupyterLab interface pop up!  Note that the "s" on https 
 Once you've installed the necessary tools or have set up your account on Rhino,
 you'll need to create a new virtual environment. To do so, open a terminal and run:
 
-    conda create -y -n environmentname python=3.7
+    conda create -y -n <environmentname> python=3.7
     NOTE: 'environmentname' is a placeholder, please replace it with a more descriptive name!
 
 For commands to alter or refer to this environment, you'll need to activate it.
 This step will be necessary any time you open a new terminal or restart your session,
 but will be remembered for subsequent commands.
 
-    conda activate environmentname
+    conda activate <environmentname>
     NOTE: on older versions of conda, you may instead need to use source activate environmentname
 
 
@@ -154,9 +154,9 @@ install MNE by typing the following (be sure you're in the Anaconda
 environmentname"). Note that this may take a while, because MNE has a
 lot of dependencies:
 
-    conda install -c conda-forge "mne<0.19"
-    
-**Make sure you include the quotes!!**
+    conda install -c conda-forge mne
+
+If this does not work at first, try `pip install mne`
 
 Next, install PTSA, which is a set of EEG tools developed by
 former lab members:
