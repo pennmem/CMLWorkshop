@@ -162,7 +162,7 @@ Next, install PTSA, which is a set of EEG tools developed by
 former lab members:
 
     conda install "traitlets<5"
-    conda install -c pennmem ptsa
+    conda install -c pennmem ptsa=2.0.8
 
 Install a few extra packages in use for these notes:
 
@@ -215,7 +215,7 @@ done by going into the CMLWorkshop directory and entering:
 In your ssh terminal to rhino, enter the following commands:
 
     source activate environmentname
-    conda install -c pennmem cmlreaders
+    conda install -c pennmem cmlreaders=0.9
     
 This package is being phased out, but is still needed for
 loading a large portion of data stored on Rhino. Any analyses using
