@@ -131,10 +131,14 @@ followed by entering your rhino password. In your web browser, navigate to:
 
 and you should see the JupyterLab interface pop up!  Note that the "s" on https is critical for this to work.  Your browser might warn about this being an insecure connection or invalid certificate, given that 127.0.0.1 (direct to the ssh tunnel on your own computer) is not rhino.  Override this warning and connect anyway, because we are using ssh to provide better security here.  If the connection still fails, go back and make sure that your ssh tunnel was correctly created.
 
+## Setting up your environment (Rhino)
+Good news! Working on rhino gives you access to a computing environment that already has the right software installed to do the whole workshop!
 
-## Setting up your environment 
+In JupyterLab, open any notebook and then go to Kernel -> Change Kernel... and then select "workshop" from the dropdown! Make sure you use this kernel whenever you're opening a notebook. 
 
-Once you've installed the necessary tools or have set up your account on Rhino,
+## Setting up your environment (non-Rhino / local computer)
+
+Once you've installed the necessary tools,
 you'll need to create a new virtual environment. To do so, open a terminal and run:
 
     conda create -y -n <environmentname> python=3.7
