@@ -212,7 +212,7 @@ system supports it, is to make a symbolic link in your CMLWorkshop
 directory to these files. For example, on Rhino this is currently
 done by going into the CMLWorkshop directory and entering:
 
-    ln -s /data/examples CMLExamples
+    ln -s /scratch/CMLExamples CMLExamples
 
 ## Installing CMLReaders (Rhino users only)
 
