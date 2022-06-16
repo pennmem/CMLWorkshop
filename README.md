@@ -188,6 +188,8 @@ as your Python environment. If you've been logged in to JupyterLab this
 whole time, you may need to log out and log back in again to see this
 change take effect.
 
+To access the data for this workshop outside of Rhino, contact kahana-sysadmin@sas.upenn.edu
+
 ## Getting the CMLWorkshop JupyterLab notes
 
 In a terminal in the location where you would like to download the workshop
@@ -199,20 +201,6 @@ materials, enter the following:
 
 The workshop will be downloaded to a folder named CMLWorkshop in the
 same location where you ran the git clone command.
-
-## Setting up the CMLExamples files
-
-NOTE: instructions for non-lab members are forthcoming. For the moment,
-please contact kahana-sysadmin@sas.upenn.edu to request access to this data.
-
-For this workshop, we have bundled a subset of the data collected using
-both scalp and intracranial eeg. You will need to provide each notebook code example making use of the
-CMLExamples files with how to find the files. The simplest way, if your
-system supports it, is to make a symbolic link in your CMLWorkshop
-directory to these files. For example, on Rhino this is currently
-done by going into the CMLWorkshop directory and entering:
-
-    ln -s /scratch/CMLExamples CMLExamples
 
 ## Installing CMLReaders (Rhino users only)
 
